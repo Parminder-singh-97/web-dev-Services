@@ -41,13 +41,13 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>About</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4 grid gap-2 bg-white shadow-md rounded-md min-w-[20rem]">
-                  <Link href="/about_us.html" className="hover:text-primary">
+                  <Link href="/about" className="hover:text-primary">
                     About Company
                   </Link>
-                  <Link href="/our_vision.html" className="hover:text-primary">
+                  <Link href="/our_vision" className="hover:text-primary">
                     Our Vision
                   </Link>
-                  <Link href="/our_team.html" className="hover:text-primary">
+                  <Link href="/our_team" className="hover:text-primary">
                     Our Team
                   </Link>
                 </NavigationMenuContent>
@@ -57,7 +57,7 @@ export default function Navbar() {
                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4 grid grid-cols-3 gap-4 bg-white shadow-md rounded-md min-w-[50rem]">
                   <div>
-                    <h4 className="font-bold mb-2">Website Designing</h4>
+                    <Link href={"/web_desinging_services"}><h4 className="font-bold mb-2 cursor-pointer hover:text-blue-600">Website Designing</h4></Link>
                     <ul className="space-y-1 text-sm">
                       <li>Web graphic design</li>
                       <li>Interface logo design</li>
@@ -66,7 +66,7 @@ export default function Navbar() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-bold mb-2">Website Development</h4>
+                    <Link href={"/web_development_services"}><h4 className="font-bold mb-2 cursor-pointer hover:text-blue-600">Website Development</h4> </Link>
                     <ul className="space-y-1 text-sm">
                       <li>PHP Development</li>
                       <li>.Net Stack Developments</li>
@@ -75,7 +75,7 @@ export default function Navbar() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-bold mb-2">Mobile App Development</h4>
+                    <Link href={"/mobile_app_development_services"}> <h4 className="font-bold mb-2 cursor-pointer hover:text-blue-600">Mobile App Development</h4> </Link>
                     <ul className="space-y-1 text-sm">
                       <li>Custom Native App Development</li>
                       <li>Progressive Web Apps</li>
