@@ -44,10 +44,10 @@ export default function Navbar() {
                   <Link href="/about" className="hover:text-primary">
                     About Company
                   </Link>
-                  <Link href="/our_vision" className="hover:text-primary">
+                  <Link href="/our-vision" className="hover:text-primary">
                     Our Vision
                   </Link>
-                  <Link href="/our_team" className="hover:text-primary">
+                  <Link href="/our-team" className="hover:text-primary">
                     Our Team
                   </Link>
                 </NavigationMenuContent>
