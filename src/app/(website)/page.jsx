@@ -1,13 +1,13 @@
 import React from 'react'
 import Home from "@/components/Home/Home"
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic'; 
 
-const page = () => {
+const webLayout = () => {
   return (
     <>
-      <Home/>
+      {/* <Home/> */}
     </>
   )
 }
 
-export default page
+export default webLayout
