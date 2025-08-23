@@ -1,4 +1,4 @@
-import ContactSection from '@/components/About/contactUs'
+import ContactSection from '@/components/ContactUs/ContactUs'
 import OurVisionSection from '@/components/About/Our-vision'
 import Vision_header from '@/components/About/Vision-header'
 import WorkCount from '@/components/Home/Why-chooseUS/WorkCount'

@@ -1,10 +1,13 @@
+import Career_header from '@/components/Career/Career-header'
+import Careers from '@/components/Career/Careers'
 import React from 'react'
 
 const Career = () => {
   return (
-    <div>
-      <h1>Career</h1>
-    </div>
+    <>
+    <Career_header/>
+   <Careers/>
+    </>
   )
 }
 
