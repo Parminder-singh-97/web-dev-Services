@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center font-bold text-lg">
           <span className="text-orange-500 font-extrabold text-3xl ">SP</span>
-          <span className="text-black text-2xl underline">Logistics</span>
+          <span className="text-black text-2xls">Logistics</span>
         </Link>
 
         {/* Desktop Menu (visible only on md and above) */}
