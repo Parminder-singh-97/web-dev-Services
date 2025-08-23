@@ -9,7 +9,7 @@ export default function GlobalLoader({ children }) {
   const pathname = usePathname();
   const [isAutoLoading, setIsAutoLoading] = useState(false); // Use useState instead of useEffect
   const { loading, startLoading, stopLoading } = useLoadingStore();
-    console.log(loading," from global loader");
+    
   useEffect(() => {
     // Start loader when route changes
     setIsAutoLoading(true);

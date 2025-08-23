@@ -148,7 +148,7 @@ export default function Navbar() {
         {/* Call to Action (Desktop) */}
         <div className="hidden lg:flex items-center gap-4">
           <a href="tel:+9199999999" className="text-sm font-semibold">
-            📞 +91 999999999
+            📞 +91 987643210
           </a>
           <Button className="bg-orange-500 hover:bg-orange-600" asChild>
             <Link href="/contact-us">Get Quote</Link>
@@ -164,13 +164,13 @@ export default function Navbar() {
                 size="icon"
                 className="text-orange-600  hover:bg-orange-100"
               >
-                <Menu size={32} />  
+                <Menu size={32} />
               </Button>
             </SheetTrigger>
 
             <SheetContent
               side="right"
-              className="w-[80%] sm:w-[300px] bg-white shadow-lg"
+              className="w-[80%] px-4 py-3 sm:w-[300px] bg-white shadow-lg h-full overflow-y-auto"
             >
               <VisuallyHidden>
                 <DialogTitle>Mobile Navigation Menu</DialogTitle>
@@ -182,10 +182,14 @@ export default function Navbar() {
               </VisuallyHidden>
 
               <div className="flex flex-col gap-4 mt-6 text-gray-800">
-                   <Link href="/" className="flex items-center font-bold text-lg">
-          <span className="text-orange-500 font-extrabold text-3xl ">SP</span>
-          <span className="text-black text-2xl underline">Logistics</span>
-        </Link>
+                <Link href="/" className="flex items-center font-bold text-lg">
+                  <span className="text-orange-500 font-extrabold text-3xl ">
+                    SP
+                  </span>
+                  <span className="text-black text-2xl underline">
+                    Logistics
+                  </span>
+                </Link>
 
                 {/* Home */}
                 <Link
@@ -235,50 +239,58 @@ export default function Navbar() {
                 )}
 
                 {/* Services Dropdown */}
-                <button
-                  onClick={() => setServicesOpen(!servicesOpen)}
-                  className="flex justify-between items-center w-full font-semibold px-2 py-2 rounded-md hover:bg-orange-50 hover:text-orange-600 transition"
-                >
-                  Services{" "}
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform ${
-                      servicesOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                <Link href="/services">
+                  <button
+                    onClick={() => setServicesOpen(!servicesOpen)}
+                    className="flex justify-between items-center w-full font-semibold px-2 py-2 rounded-md hover:bg-orange-50 hover:text-orange-600 transition"
+                  >
+                    Services{" "}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform ${
+                        servicesOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </Link>
                 {servicesOpen && (
                   <div className="ml-4 flex flex-col gap-3 text-sm text-gray-600">
                     <div>
-                      <p className="font-semibold text-orange-600">
-                        Website Designing
-                      </p>
-                      <ul className="ml-4 list-disc">
-                        <li>Web graphic design</li>
-                        <li>Interface logo design</li>
-                        <li>Brochures & catalogs</li>
-                        <li>User experience design</li>
-                      </ul>
+                      <Link  onClick={() => setOpen(false)} href="/services/web-designing-services">
+                        <p className="font-semibold text-orange-600">
+                          Website Designing
+                        </p>
+                        <ul className="ml-4 list-disc">
+                          <li>Web graphic design</li>
+                          <li>Interface logo design</li>
+                          <li>Brochures & catalogs</li>
+                          <li>User experience design</li>
+                        </ul>
+                      </Link>
                     </div>
                     <div>
-                      <p className="font-semibold text-orange-600">
-                        Website Development
-                      </p>
-                      <ul className="ml-4 list-disc">
-                        <li>PHP Development</li>
-                        <li>.Net Stack Development</li>
-                        <li>Angular JS Development</li>
-                        <li>React Development</li>
-                      </ul>
+                      <Link  onClick={() => setOpen(false)} href="/services/web-development-services">
+                        <p className="font-semibold text-orange-600">
+                          Website Development
+                        </p>
+                        <ul className="ml-4 list-disc">
+                          <li>PHP Development</li>
+                          <li>.Net Stack Development</li>
+                          <li>Angular JS Development</li>
+                          <li>React Development</li>
+                        </ul>
+                      </Link>
                     </div>
                     <div>
-                      <p className="font-semibold text-orange-600">
-                        Mobile App Development
-                      </p>
-                      <ul className="ml-4 list-disc">
-                        <li>Custom Native App Development</li>
-                        <li>Progressive Web Apps</li>
-                        <li>App Maintenance</li>
-                      </ul>
+                      <Link  onClick={() => setOpen(false)} href="/services/mobile-app-development-services">
+                        <p className="font-semibold text-orange-600">
+                          Mobile App Development
+                        </p>
+                        <ul className="ml-4 list-disc">
+                          <li>Custom Native App Development</li>
+                          <li>Progressive Web Apps</li>
+                          <li>App Maintenance</li>
+                        </ul>
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -319,7 +331,7 @@ export default function Navbar() {
                     href="tel:+9199999999"
                     className="block text-sm font-semibold text-gray-700 mb-2 hover:text-orange-600"
                   >
-                    📞 +91 99999999
+                    📞 +91 987653210
                   </a>
                   <Button
                     asChild
