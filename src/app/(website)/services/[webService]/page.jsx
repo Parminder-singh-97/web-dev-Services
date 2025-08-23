@@ -2,8 +2,8 @@ import WebsiteDesigning from "@/components/Services/WebsiteDesigning";
 import WebsiteDevelopment from "@/components/Services/WebsiteDevelopment";
 import MobileAppDevelopment from "@/components/Services/MobileAppDevelopment";
 
-export default function ServicePage({ params }) {
-  const { webService } = params;
+export default async function ServicePage({ params }) {
+  const { webService } = await params;
 
   const renderService = () => {
     switch (webService) {
