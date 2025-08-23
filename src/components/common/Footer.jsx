@@ -1,18 +1,14 @@
+import { ArrowUpWideNarrow, ArrowUpWideNarrowIcon } from "lucide-react";
 import React from "react";
+import { IoArrowUpCircleOutline, IoReturnUpForward } from "react-icons/io5";
+import BackToTop from "./BackToTop";
 
 const Footer = () => {
   return (
     <>
       <footer className="bg-gray-900 text-white">
         {/* Back to top */}
-        <div className="fixed bottom-5 right-5">
-          <a
-            href="#Home"
-            className="bg-orange-600 hover:bg-orange-700 text-white p-3 rounded-full shadow-lg transition"
-          >
-            <i className="fa fa-angle-up" aria-hidden="true" />
-          </a>
-        </div>
+       <BackToTop/> 
 
         {/* Footer main content */}
         <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

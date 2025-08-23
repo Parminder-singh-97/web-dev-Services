@@ -1,6 +1,7 @@
 "use client";
 
 import { SetContactForm } from "@/app/actions/contactForm";
+import useLoadingStore from "@/lib/store/loadingStore";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -10,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 const ContactSection = () => {
   const pathname = usePathname();
   const [disabledSubmit, setDisabledSubmit] = useState(false);
+  const { startLoading, stopLoading } = useLoadingStore();
 
   const {
     register,
@@ -23,9 +25,11 @@ const ContactSection = () => {
       // Simulate API call delay
       // await new Promise((resolve) => setTimeout(resolve, 1500));
       setDisabledSubmit(true);
+      startLoading();
       const contactFormData = await SetContactForm(data);
 
       toast.success("Form submitted successfully!");
+      stopLoading();    
       setDisabledSubmit(false);
       reset();
     } catch (error) {
