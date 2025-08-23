@@ -10,26 +10,26 @@ export default function OurTeamSection() {
             data-aos-duration="1000"
             className="space-y-4"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 drop-shadow-sm ">
               Meet Our Team
             </h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed drop-shadow-sm ">
               Our team consists of a dynamic group of talented professionals,
               each working with dedication to ensure the success of every project
               we take on.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed drop-shadow-sm  ">
               We operate in two core divisions — the Creative Solutions Team and
               the Technical Management Team. Together, they bring every skill
               required to bring your project to life.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed drop-shadow-sm ">
               At{" "}
               <a
                 // href="https://www.htlogics.com/"
                 className="text-blue-600 hover:underline"
               >
-                htlogics
+                SP Logistics
               </a>
               , our work culture revolves around fulfilling client needs while
               delivering exceptional value for investment. We provide complete
