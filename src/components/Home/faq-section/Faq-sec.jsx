@@ -12,7 +12,7 @@ const FaqSections = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800">
-            <span className="text-blue-600">FAQs</span>
+            <span className="text-orange-600">FAQs</span>
             <br /> Common Questions We Answer
           </h2>
         </div>

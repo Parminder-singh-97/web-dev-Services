@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 
 const WhyChooseUS = () => {
   const features = [
@@ -109,7 +110,7 @@ const WhyChooseUS = () => {
                         <i key={idx} className="fa fa-star text-yellow-400" />
                       )
                     )}
-                    {rating.stars}
+                    <FaStar className="text-yellow-400"/> {rating.stars}
                   </p>
                 </a>
               ))}

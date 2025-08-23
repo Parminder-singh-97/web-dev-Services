@@ -45,17 +45,17 @@ export default function ClientTestimonials() {
         </h2>
 
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
           navigation
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           className="max-w-5xl mx-auto"
         >
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <div className="bg-white rounded-xl  p-6 flex flex-col items-center text-center">
                 <p className="text-gray-700 italic mb-4">"{item.text}"</p>
                 <div className="flex text-yellow-500 mb-2">
                   {Array.from({ length: Math.floor(item.rating) }).map(

@@ -26,7 +26,7 @@ const We_offer_section = () => {
             </p>
             <p>
               <Link
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center gap-2 bg-orange-300 text-orange-900 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-orange-400 transition"
               >
                 Get Started Now
