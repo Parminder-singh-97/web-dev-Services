@@ -1,13 +1,15 @@
 "use client";
 
+import { SetContactForm } from "@/app/actions/contactForm";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactSection = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
+  const [disabledSubmit, setDisabledSubmit] = useState(false);
 
   const {
     register,
@@ -19,9 +21,12 @@ const ContactSection = () => {
   const onSubmit = async (data) => {
     try {
       // Simulate API call delay
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // await new Promise((resolve) => setTimeout(resolve, 1500));
+      setDisabledSubmit(true);
+      const contactFormData = await SetContactForm(data);
 
       toast.success("Form submitted successfully!");
+      setDisabledSubmit(false);
       reset();
     } catch (error) {
       toast.error("Failed to submit form. Please try again.");
@@ -33,20 +38,21 @@ const ContactSection = () => {
       {/* Toast Container */}
       <ToastContainer position="top-right" autoClose={3000} />
 
-      {pathname === "/contact-us" && (<div className="w-full text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
-          Let’s get connected <br />
-          <span className="text-orange-600">
-            Transform your Business with us
-          </span>
-        </h2>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          We’re here to help with any questions or information you may need.
-          Reach out to us via phone or email, and our team will be happy to
-          assist you promptly.
-        </p>
-      </div>)}
-      
+      {pathname === "/contact-us" && (
+        <div className="w-full text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+            Let’s get connected <br />
+            <span className="text-orange-600">
+              Transform your Business with us
+            </span>
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            We’re here to help with any questions or information you may need.
+            Reach out to us via phone or email, and our team will be happy to
+            assist you promptly.
+          </p>
+        </div>
+      )}
 
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -195,13 +201,18 @@ const ContactSection = () => {
                   Terms and Conditions
                 </a>
               </p>
-
               <button
                 type="submit"
-                disabled={false}
+                disabled={disabledSubmit}
                 className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition text-white font-bold py-3 rounded-md shadow-lg"
               >
-                Submit <i className="fa-solid fa-arrow-right ml-2" />
+                {disabledSubmit ? (
+                  "Submitting..."
+                ) : (
+                  <>
+                    Submit <i className="fa-solid fa-arrow-right ml-2" />
+                  </>
+                )}
               </button>
             </form>
           </div>
