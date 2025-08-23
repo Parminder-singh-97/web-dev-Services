@@ -1,11 +1,14 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactSection = () => {
+  const pathname = usePathname()
+
   const {
     register,
     handleSubmit,
@@ -30,12 +33,28 @@ const ContactSection = () => {
       {/* Toast Container */}
       <ToastContainer position="top-right" autoClose={3000} />
 
+      {pathname === "/contact-us" && (<div className="w-full text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+          Let’s get connected <br />
+          <span className="text-orange-600">
+            Transform your Business with us
+          </span>
+        </h2>
+        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          We’re here to help with any questions or information you may need.
+          Reach out to us via phone or email, and our team will be happy to
+          assist you promptly.
+        </p>
+      </div>)}
+      
+
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Left Content */}
           <div className="md:w-1/2 space-y-8">
             <h2 className="text-4xl font-extrabold">
-              <span className="text-orange-400">Want to talk</span> about your Project
+              <span className="text-orange-400">Want to talk</span> about your
+              Project
             </h2>
 
             <div className="flex items-start gap-6 bg-orange-200/20 rounded-xl p-6 shadow-lg">
@@ -48,10 +67,12 @@ const ContactSection = () => {
               </figure>
               <div className="text-black flex flex-col justify-center space-y-4">
                 <p className="font-medium leading-relaxed">
-                  Your project deserves the best, and it all starts with a conversation.
-                  We’re passionate about understanding your vision, your business, and your challenges.
-                  Our team is committed to working closely with you to ensure that your project not only meets
-                  but exceeds your expectations. Ready to get started?
+                  Your project deserves the best, and it all starts with a
+                  conversation. We’re passionate about understanding your
+                  vision, your business, and your challenges. Our team is
+                  committed to working closely with you to ensure that your
+                  project not only meets but exceeds your expectations. Ready to
+                  get started?
                 </p>
                 <h6 className="font-semibold text-orange-600">
                   Let’s talk about how we can bring your project to life.
@@ -81,7 +102,9 @@ const ContactSection = () => {
                     }`}
                   />
                   {errors.fullName && (
-                    <p className="text-red-500 text-sm mt-1">{errors.fullName.message}</p>
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.fullName.message}
+                    </p>
                   )}
                 </div>
 
@@ -103,7 +126,9 @@ const ContactSection = () => {
                     }`}
                   />
                   {errors.emailAddress && (
-                    <p className="text-red-500 text-sm mt-1">{errors.emailAddress.message}</p>
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.emailAddress.message}
+                    </p>
                   )}
                 </div>
 
@@ -133,7 +158,9 @@ const ContactSection = () => {
                     }`}
                   />
                   {errors.phoneNumber && (
-                    <p className="text-red-500 text-sm mt-1">{errors.phoneNumber.message}</p>
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.phoneNumber.message}
+                    </p>
                   )}
                 </div>
               </div>
@@ -157,7 +184,9 @@ const ContactSection = () => {
                 }`}
               />
               {errors.message && (
-                <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.message.message}
+                </p>
               )}
 
               <p className="text-xs text-gray-600">

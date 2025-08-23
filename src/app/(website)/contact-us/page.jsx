@@ -1,11 +1,15 @@
+import Contact_header from '@/components/ContactUs/Contact-header'
+import ContactSection from '@/components/ContactUs/ContactUs'
 import React from 'react'
 
 const Contact_us = () => {
   return (
-    <div>
-        <h1>Contact_us</h1>
+    <>
+    <Contact_header/>
+    <ContactSection/>
+        
       
-    </div>
+    </>
   )
 }
 
