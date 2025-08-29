@@ -53,21 +53,21 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList className="flex gap-6">
               <NavigationMenuItem>
-                <Link href="/" className="hover:text-orange-600 transition">
+                <Link href="/" className=" font-bold hover:text-orange-600 transition">
                   Home
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                <NavigationMenuTrigger className={"font-bold"}>About</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4 grid gap-2 bg-white shadow-md rounded-md min-w-[20rem]">
-                  <Link href="/about" className="hover:text-orange-600">
+                  <Link href="/about" className="font-bold hover:text-orange-600">
                     About Company
                   </Link>
-                  <Link href="/our-vision" className="hover:text-orange-600">
+                  <Link href="/our-vision" className=" font-bold hover:text-orange-600">
                     Our Vision
                   </Link>
-                  <Link href="/our-team" className="hover:text-orange-600">
+                  <Link href="/our-team" className="font-bold hover:text-orange-600">
                     Our Team
                   </Link>
                 </NavigationMenuContent>
@@ -75,11 +75,12 @@ export default function Navbar() {
 
               <NavigationMenuItem>
                 <Link href="/services" passHref>
-                  <NavigationMenuTrigger className="cursor-pointer">
+                  <NavigationMenuTrigger className="font-bold cursor-pointer">
                     Services
                   </NavigationMenuTrigger>
                 </Link>
-                <NavigationMenuContent className="p-4 grid grid-cols-3 gap-4 bg-white shadow-md rounded-md min-w-[50rem]">
+                <NavigationMenuContent className="p-4 grid grid-cols-4 gap-6 bg-white shadow-md rounded-md min-w-[65rem]">
+                  {/* Website Designing */}
                   <div>
                     <Link href="/services/web-designing-services">
                       <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
@@ -87,12 +88,14 @@ export default function Navbar() {
                       </h4>
                     </Link>
                     <ul className="space-y-1 text-sm">
-                      <li>Web graphic design</li>
-                      <li>Interface logo design</li>
-                      <li>Brochures & catalogs</li>
-                      <li>User experience design</li>
+                      <li>Web Graphic Design</li>
+                      <li>Interface Logo Design</li>
+                      <li>Brochures & Catalogs</li>
+                      <li>User Experience Design</li>
                     </ul>
                   </div>
+
+                  {/* Website Development */}
                   <div>
                     <Link href="/services/web-development-services">
                       <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
@@ -100,12 +103,14 @@ export default function Navbar() {
                       </h4>
                     </Link>
                     <ul className="space-y-1 text-sm">
-                      <li>PHP Development</li>
-                      <li>.Net Stack Developments</li>
-                      <li>Angular JS Development</li>
-                      <li>React Development</li>
+                      <li>MERM Stack Development</li>
+                          <li>Next.js Development</li>
+                          <li>Node JS Development</li>
+                          <li>React Development</li>
                     </ul>
                   </div>
+
+                  {/* Mobile App Development */}
                   <div>
                     <Link href="/services/mobile-app-development-services">
                       <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
@@ -118,16 +123,31 @@ export default function Navbar() {
                       <li>App Maintenance</li>
                     </ul>
                   </div>
+
+                  {/* Power BI Services */}
+                  <div>
+                    <Link href="/services/powerbi-dashboard-services">
+                      <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
+                        Power BI Services
+                      </h4>
+                    </Link>
+                    <ul className="space-y-1 text-sm">
+                      <li>Dashboard Development</li>
+                      <li>Data Modeling</li>
+                      <li>Interactive Reporting</li>
+                      <li>Power BI Integration</li>
+                    </ul>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/our-clients" className="hover:text-orange-600">
+                <Link href="/our-clients" className="font-bold hover:text-orange-600">
                   Our Clients
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/career" className="hover:text-orange-600">
+                <Link href="/career" className="font-bold hover:text-orange-600">
                   Career
                 </Link>
               </NavigationMenuItem>
@@ -137,7 +157,7 @@ export default function Navbar() {
                   </Link>
                 </NavigationMenuItem> */}
               <NavigationMenuItem>
-                <Link href="/contact-us" className="hover:text-orange-600">
+                <Link href="/contact-us" className="font-bold hover:text-orange-600">
                   Contact Us
                 </Link>
               </NavigationMenuItem>
@@ -147,8 +167,8 @@ export default function Navbar() {
 
         {/* Call to Action (Desktop) */}
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+9199999999" className="text-sm font-semibold">
-            📞 +91 987643210
+          <a href="tel:+916280256184" className="text-sm font-semibold">
+            📞 +91 6280256184
           </a>
           <Button className="bg-orange-500 hover:bg-orange-600" asChild>
             <Link href="/contact-us">Get Quote</Link>
@@ -156,6 +176,9 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu (Sheet) */}
+
+
+
         <div className="lg:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -255,7 +278,10 @@ export default function Navbar() {
                 {servicesOpen && (
                   <div className="ml-4 flex flex-col gap-3 text-sm text-gray-600">
                     <div>
-                      <Link  onClick={() => setOpen(false)} href="/services/web-designing-services">
+                      <Link
+                        onClick={() => setOpen(false)}
+                        href="/services/web-designing-services"
+                      >
                         <p className="font-semibold text-orange-600">
                           Website Designing
                         </p>
@@ -267,21 +293,29 @@ export default function Navbar() {
                         </ul>
                       </Link>
                     </div>
+
                     <div>
-                      <Link  onClick={() => setOpen(false)} href="/services/web-development-services">
+                      <Link
+                        onClick={() => setOpen(false)}
+                        href="/services/web-development-services"
+                      >
                         <p className="font-semibold text-orange-600">
                           Website Development
                         </p>
                         <ul className="ml-4 list-disc">
-                          <li>PHP Development</li>
-                          <li>.Net Stack Development</li>
-                          <li>Angular JS Development</li>
+                          <li>MERM Stack Development</li>
+                          <li>Next.js Development</li>
+                          <li>Node JS Development</li>
                           <li>React Development</li>
                         </ul>
                       </Link>
                     </div>
+
                     <div>
-                      <Link  onClick={() => setOpen(false)} href="/services/mobile-app-development-services">
+                      <Link
+                        onClick={() => setOpen(false)}
+                        href="/services/mobile-app-development-services"
+                      >
                         <p className="font-semibold text-orange-600">
                           Mobile App Development
                         </p>
@@ -289,6 +323,24 @@ export default function Navbar() {
                           <li>Custom Native App Development</li>
                           <li>Progressive Web Apps</li>
                           <li>App Maintenance</li>
+                        </ul>
+                      </Link>
+                    </div>
+
+                    {/* ✅ New Power BI Services */}
+                    <div>
+                      <Link
+                        onClick={() => setOpen(false)}
+                        href="/powerbi-dashboard-services"
+                      >
+                        <p className="font-semibold text-orange-600">
+                          Power BI Services
+                        </p>
+                        <ul className="ml-4 list-disc">
+                          <li>Interactive Dashboard Design</li>
+                          <li>Custom Data Visualization</li>
+                          <li>Data Integration & Modeling</li>
+                          <li>Business Insights & Reports</li>
                         </ul>
                       </Link>
                     </div>
@@ -310,13 +362,13 @@ export default function Navbar() {
                 >
                   Career
                 </Link>
-                <Link
+                {/* <Link
                   href="/portfolio"
                   onClick={() => setOpen(false)}
                   className="px-2 py-2 rounded-md hover:bg-orange-50 hover:text-orange-600 transition"
                 >
                   Portfolio
-                </Link>
+                </Link> */}
                 <Link
                   href="/contact-us"
                   onClick={() => setOpen(false)}
@@ -328,10 +380,10 @@ export default function Navbar() {
                 {/* Contact Info + CTA */}
                 <div className="mt-6 border-t pt-4">
                   <a
-                    href="tel:+9199999999"
+                    href="tel:+916280256184"
                     className="block text-sm font-semibold text-gray-700 mb-2 hover:text-orange-600"
                   >
-                    📞 +91 987653210
+                    📞 +91 6280256184
                   </a>
                   <Button
                     asChild
@@ -344,6 +396,9 @@ export default function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
+
+
+
       </div>
     </nav>
   );

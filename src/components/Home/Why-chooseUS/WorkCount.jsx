@@ -4,10 +4,10 @@ import { FaStar } from "react-icons/fa";
 
 export default function WorkCount() {
   const counters = [
-    { value: 2000, label: "Projects" },
-    { value: 1800, label: "Happy Clients" },
+    { value: 5, label: "Projects" },
+    { value: 100, label: "Happy Clients" },
     { value: 10, label: "Awards Won" },
-    { value: 50, label: "Trusted Team" },
+    { value: 10, label: "Trusted Team" },
   ];
 
   return (

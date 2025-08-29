@@ -43,14 +43,14 @@ const Hero = () => {
               Discover More <i className="fa-solid fa-arrow-right" />
             </a>
             <a
-              href="tel:+917018160097"
+              href="tel:+916280256184"
               className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition"
             >
               <i className="fa-regular fa-comment-dots text-2xl" />
               <span className="flex flex-col text-sm leading-tight">
                 <span className="font-medium">Need help?</span>
-                <span className="text-orange-600 font-semibold">
-                  +91 701 816 0097
+                <span className="text-orange-600 pt-2 font-semibold">
+                   +91 6280256184
                 </span>
               </span>
             </a>
