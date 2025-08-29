@@ -73,73 +73,73 @@ export default function Navbar() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <Link href="/services" passHref>
-                  <NavigationMenuTrigger className="font-bold cursor-pointer">
-                    Services
-                  </NavigationMenuTrigger>
-                </Link>
-                <NavigationMenuContent className="p-4 grid grid-cols-4 gap-6 bg-white shadow-md rounded-md min-w-[65rem]">
-                  {/* Website Designing */}
-                  <div>
-                    <Link href="/services/web-designing-services">
-                      <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
-                        Website Designing
-                      </h4>
-                    </Link>
-                    <ul className="space-y-1 text-sm">
-                      <li>Web Graphic Design</li>
-                      <li>Interface Logo Design</li>
-                      <li>Brochures & Catalogs</li>
-                      <li>User Experience Design</li>
-                    </ul>
-                  </div>
+                <NavigationMenuItem >
+                  <Link href="/services" passHref>
+                    <NavigationMenuTrigger className="font-bold cursor-pointer">
+                      Services
+                    </NavigationMenuTrigger>
+                  </Link>
+                  <NavigationMenuContent className="  p-4 grid grid-cols-4 gap-6 bg-white shadow-md rounded-md  lg:min-w-[65rem]">
+                    {/* Website Designing */}
+                    <div>
+                      <Link href="/services/web-designing-services">
+                        <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
+                          Website Designing
+                        </h4>
+                      </Link>
+                      <ul className="space-y-1 text-sm">
+                        <li>Web Graphic Design</li>
+                        <li>Interface Logo Design</li>
+                        <li>Brochures & Catalogs</li>
+                        <li>User Experience Design</li>
+                      </ul>
+                    </div>
 
-                  {/* Website Development */}
-                  <div>
-                    <Link href="/services/web-development-services">
-                      <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
-                        Website Development
-                      </h4>
-                    </Link>
-                    <ul className="space-y-1 text-sm">
-                      <li>MERM Stack Development</li>
-                          <li>Next.js Development</li>
-                          <li>Node JS Development</li>
-                          <li>React Development</li>
-                    </ul>
-                  </div>
+                    {/* Website Development */}
+                    <div>
+                      <Link href="/services/web-development-services">
+                        <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
+                          Website Development
+                        </h4>
+                      </Link>
+                      <ul className="space-y-1 text-sm">
+                        <li>MERM Stack Development</li>
+                            <li>Next.js Development</li>
+                            <li>Node JS Development</li>
+                            <li>React Development</li>
+                      </ul>
+                    </div>
 
-                  {/* Mobile App Development */}
-                  <div>
-                    <Link href="/services/mobile-app-development-services">
-                      <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
-                        Mobile App Development
-                      </h4>
-                    </Link>
-                    <ul className="space-y-1 text-sm">
-                      <li>Custom Native App Development</li>
-                      <li>Progressive Web Apps</li>
-                      <li>App Maintenance</li>
-                    </ul>
-                  </div>
+                    {/* Mobile App Development */}
+                    <div>
+                      <Link href="/services/mobile-app-development-services">
+                        <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
+                          Mobile App Development
+                        </h4>
+                      </Link>
+                      <ul className="space-y-1 text-sm">
+                        <li>Custom Native App Development</li>
+                        <li>Progressive Web Apps</li>
+                        <li>App Maintenance</li>
+                      </ul>
+                    </div>
 
-                  {/* Power BI Services */}
-                  <div>
-                    <Link href="/services/powerbi-dashboard-services">
-                      <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
-                        Power BI Services
-                      </h4>
-                    </Link>
-                    <ul className="space-y-1 text-sm">
-                      <li>Dashboard Development</li>
-                      <li>Data Modeling</li>
-                      <li>Interactive Reporting</li>
-                      <li>Power BI Integration</li>
-                    </ul>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+                    {/* Power BI Services */}
+                    <div>
+                      <Link href="/services/powerbi-dashboard-services">
+                        <h4 className="font-bold mb-2 cursor-pointer hover:text-orange-600">
+                          Power BI Services
+                        </h4>
+                      </Link>
+                      <ul className="space-y-1 text-sm">
+                        <li>Dashboard Development</li>
+                        <li>Data Modeling</li>
+                        <li>Interactive Reporting</li>
+                        <li>Power BI Integration</li>
+                      </ul>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <Link href="/our-clients" className="font-bold hover:text-orange-600">
@@ -331,7 +331,7 @@ export default function Navbar() {
                     <div>
                       <Link
                         onClick={() => setOpen(false)}
-                        href="/powerbi-dashboard-services"
+                        href="/services/powerbi-dashboard-services"
                       >
                         <p className="font-semibold text-orange-600">
                           Power BI Services
