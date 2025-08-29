@@ -130,6 +130,37 @@
   animation: spin-slow 10s linear infinite;
 }
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Custom Orange Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff; /* background behind scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f97316; /* orange-500 */
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c; /* orange-600 */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f97316 #fff;
+}
+
+
 
 /* From Uiverse.io by mobinkakei */ 
 #wifi-loader {

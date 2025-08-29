@@ -1,6 +1,4 @@
-import { ArrowUpWideNarrow, ArrowUpWideNarrowIcon } from "lucide-react";
 import React from "react";
-import { IoArrowUpCircleOutline, IoReturnUpForward } from "react-icons/io5";
 import BackToTop from "./BackToTop";
 
 const Footer = () => {
@@ -8,261 +6,131 @@ const Footer = () => {
     <>
       <footer className="bg-gray-900 text-white">
         {/* Back to top */}
-       <BackToTop/> 
+        <BackToTop />
 
         {/* Footer main content */}
         <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Column 1 */}
+          {/* Column 1 - Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500   ">Enterprise Solutions</h4>
+            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+              Our Services
+            </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="web_desinging_services.html"
-                  className="hover:text-orange-400"
-                >
-                  Website Designing
+                <a href="/services" className="hover:text-orange-400">
+                  Web Designing
                 </a>
               </li>
               <li>
-                <a
-                  href="website_development.html"
-                  className="hover:text-orange-400"
-                >
-                  Website Development
+                <a href="/services" className="hover:text-orange-400">
+                  Web Development
                 </a>
               </li>
               <li>
-                <a
-                  href="website_designing_mohali.html"
-                  className="hover:text-orange-400"
-                >
-                  Website Designing Mohali
+                <a href="/services" className="hover:text-orange-400">
+                  Power BI Dashboard Solutions
                 </a>
               </li>
               <li>
-                <a
-                  href="website_development_mohali.html"
-                  className="hover:text-orange-400"
-                >
-                  Website Development Mohali
-                </a>
-              </li>
-              <li>
-                <a
-                  href="e_commerce_development.html"
-                  className="hover:text-orange-400"
-                >
+                <a href="/services" className="hover:text-orange-400">
                   E-Commerce Development
                 </a>
               </li>
               <li>
-                <a href="cms_solutions.html" className="hover:text-orange-400">
-                  Content Management System
+                <a href="/services" className="hover:text-orange-400">
+                  CMS Development
                 </a>
               </li>
               <li>
-                <a
-                  href="visual_basic_programming.html"
-                  className="hover:text-orange-400"
-                >
-                  VB Programming
+                <a href="/services" className="hover:text-orange-400">
+                  Custom Software Solutions
                 </a>
               </li>
               <li>
-                <a href="portal.html" className="hover:text-orange-400">
-                  Portal Development
-                </a>
-              </li>
-              <li>
-                <a
-                  href="best-web-hosting-company-chandigarh-mohali-india.html"
-                  className="hover:text-orange-400"
-                >
-                  Web Hosting
+                <a href="/services" className="hover:text-orange-400">
+                  Web Hosting & Maintenance
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 2 */}
+          {/* Column 2 - Technology Expertise */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">Technology Services</h4>
+            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+              Technology Expertise
+            </h4>
             <ul className="space-y-2">
-              <li>
-                <a href="web_2.0_design.html" className="hover:text-orange-400">
-                  Web 2.0 Design
-                </a>
-              </li>
-              <li>
-                <a
-                  href="web_2.0_development.html"
-                  className="hover:text-orange-400"
-                >
-                  Web 2.0 Development
-                </a>
-              </li>
-              <li>
-                <a href="xhtml_css3.html" className="hover:text-orange-400">
-                  XHTML / CSS3
-                </a>
-              </li>
-              <li>
-                <a
-                  href="asp.net_programming.html"
-                  className="hover:text-orange-400"
-                >
-                  ASP.NET Programming
-                </a>
-              </li>
-              <li>
-                <a href="vb.net_training.html" className="hover:text-orange-400">
-                  VB.NET Training
-                </a>
-              </li>
-              <li>
-                <a
-                  href="core_php_programming.html"
-                  className="hover:text-orange-400"
-                >
-                  Core PHP Programming
-                </a>
-              </li>
-              <li>
-                <a
-                  href="chandigarh_php_training_companies.html"
-                  className="hover:text-orange-400"
-                >
-                  PHP Training
-                </a>
-              </li>
+              <li>React.js & Next.js</li>
+              <li>Node.js & Express.js</li>
+              <li>MongoDB & MySQL</li>
+              <li>Power BI & Data Analytics</li>
+              <li>Cloud Hosting (AWS / Hostinger / Vercel)</li>
+              <li>UI/UX Design with Tailwind CSS</li>
             </ul>
           </div>
 
-          {/* Column 3 */}
+          {/* Column 3 - Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">I-Marketing</h4>
+            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="internet_marketing.html"
-                  className="hover:text-orange-400"
-                >
-                  Internet Marketing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="search_engine_optimization.html"
-                  className="hover:text-orange-400"
-                >
-                  Search Engine Optimization
-                </a>
-              </li>
-              <li>
-                <a
-                  href="search_engine_marketing.html"
-                  className="hover:text-orange-400"
-                >
-                  Search Engine Marketing
-                </a>
-              </li>
-              <li>
-                <a href="link_building.html" className="hover:text-orange-400">
-                  Link Building
-                </a>
-              </li>
-              <li>
-                <a
-                  href="social_media_marketing.html"
-                  className="hover:text-orange-400"
-                >
-                  Social Media Marketing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="java_programming_companies_mohali_chandigarh_panchkula.html"
-                  className="hover:text-orange-400"
-                >
-                  Java Programming
-                </a>
-              </li>
-              <li>
-                <a
-                  href="magento_development_services_in_chandigarh_company.html"
-                  className="hover:text-orange-400"
-                >
-                  Magento Development
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4 */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">About SP-logistics</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="about_us.html" className="hover:text-orange-400">
+                <a href="/about-us" className="hover:text-orange-400">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="our_vision.html" className="hover:text-orange-400">
-                  Our Vision
+                <a href="/services" className="hover:text-orange-400">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="our_team.html" className="hover:text-orange-400">
-                  Our Team
+                <a href="/career" className="hover:text-orange-400">
+                  Careers
                 </a>
               </li>
               <li>
-                <a href="corporate.html" className="hover:text-orange-400">
-                  Corporate
-                </a>
-              </li>
-              <li>
-                <a href="career.html" className="hover:text-orange-400">
-                  Career with HTL
-                </a>
-              </li>
-              <li>
-                <a href="contact_us.html" className="hover:text-orange-400">
+                <a href="/contact" className="hover:text-orange-400">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a
-                  href="software_testing_company_chandigarh.html"
-                  className="hover:text-orange-400"
-                >
-                  Software Testing
+                <a href="/PrivacyTerms" className="hover:text-orange-400">
+                  Privacy Policy
                 </a>
               </li>
+             
             </ul>
+          </div>
+
+          {/* Column 4 - About */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+              About SP-Logistics
+            </h4>
+            <p className="text-sm text-gray-300 leading-6">
+              At SP-Logistics, we specialize in providing cutting-edge
+              <span className="text-orange-400"> web solutions</span>, 
+              <span className="text-orange-400"> digital transformation</span>, 
+              and <span className="text-orange-400"> business intelligence</span>.  
+              From website design & development to advanced Power BI dashboards,  
+              we help businesses grow with technology.
+            </p>
           </div>
         </div>
 
         {/* Address Section */}
-        <div className="bg-gray-800 mt-10">
+        {/* <div className="bg-gray-800 mt-10">
           <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <i className="fa-regular fa-envelope text-xl mb-2"></i>
               <h2 className="text-sm">
                 <a
-                  href="mailto:sanjeev@htlogics.com"
+                  href="mailto:info@splogistics.com"
                   className="hover:text-orange-400"
                 >
-                  sanjeev@htlogics.com
-                </a>
-                <br />
-                <a
-                  href="mailto:sandeep@htlogics.com"
-                  className="hover:text-orange-400"
-                >
-                  sandeep@htlogics.com
+                  info@splogistics.com
                 </a>
               </h2>
             </div>
@@ -287,24 +155,17 @@ const Footer = () => {
             <div>
               <i className="fa-solid fa-map-location-dot text-xl mb-2"></i>
               <h2 className="text-sm">
-                27 Horton Hill Epsom Surrey, United Kingdom KT19 8SS
+                27 Horton Hill, Epsom Surrey, United Kingdom KT19 8SS
               </h2>
-              <p>
-                <a
-                  href="tel:+44 (0)7799 136 136"
-                  className="hover:text-orange-400"
-                >
-                  +44 (0)7799 136 136
-                </a>
-              </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Copyright */}
         <div className="bg-gray-950 py-4">
           <p className="text-center text-gray-400 text-sm">
-            Copyrights © 2024 All Rights Reserved with SP logistics PVT. LTD.
+            Copyrights © {new Date().getFullYear()} All Rights Reserved |
+            SP Logistics Pvt. Ltd.
           </p>
         </div>
       </footer>

@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Careers = () => {
   return (
@@ -6,10 +8,12 @@ const Careers = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Left Section */}
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
             className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500"
-            data-aos="fade-up"
-            data-aos-duration="1000"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Careers at <span className="text-orange-600">SP Logistics</span>
@@ -43,20 +47,22 @@ const Careers = () => {
               <p className="text-gray-700 mt-2">
                 Please send your CV to{" "}
                 <a
-                  href="mailto:careers@splogistics.com"
+                  href="mailto:s.pammi.22g@gmail.com"
                   className="text-orange-600 font-semibold hover:underline"
                 >
-                  careers@splogistics.com
+                  s.pammi.22g@gmail.com
                 </a>
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Section - Contact Info */}
-          <div
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }}
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500"
-            data-aos="fade-left"
-            data-aos-duration="1200"
           >
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">
               Get in Touch
@@ -67,18 +73,10 @@ const Careers = () => {
                 <h5 className="font-semibold text-gray-700">Call Us</h5>
                 <p>
                   <a
-                    href="tel:+91 7018160097"
+                    href="tel:+916280256184"
                     className="text-orange-600 hover:underline"
                   >
-                    +91 7018160097
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href="tel:+91 9646594291"
-                    className="text-orange-600 hover:underline"
-                  >
-                    +91 9646594291
+                    +91 6280256184
                   </a>
                 </p>
               </div>
@@ -87,18 +85,10 @@ const Careers = () => {
                 <h5 className="font-semibold text-gray-700">Email Us</h5>
                 <p>
                   <a
-                    href="mailto:info@splogistics.com"
+                    href="mailto:s.pammi.22g@gmail.com"
                     className="text-orange-600 hover:underline"
                   >
-                    info@splogistics.com
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href="mailto:support@splogistics.com"
-                    className="text-orange-600 hover:underline"
-                  >
-                    support@splogistics.com
+                    s.pammi.22g@gmail.com
                   </a>
                 </p>
               </div>
@@ -106,45 +96,57 @@ const Careers = () => {
               <div>
                 <h5 className="font-semibold text-gray-700">Head Office</h5>
                 <p className="text-gray-600">
-                  SCO 88-D, City Heart, Sector 125, Mohali, Punjab, India
-                  140301
+                  Nai Abadi Road, Nai Abadi, Anandpur Sahib, Punjab 140118
                 </p>
               </div>
 
               <div>
                 <h5 className="font-semibold text-gray-700">Follow Us</h5>
                 <div className="flex space-x-4 mt-2">
-                  <a
+                  <motion.a
+                    whileHover={{ scale: 1.2 }}
                     href="#"
                     target="_blank"
-                    className="text-orange-600 hover:scale-110 transition-transform"
+                    className="text-orange-600"
                   >
                     <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.2 }}
                     href="#"
                     target="_blank"
-                    className="text-orange-600 hover:scale-110 transition-transform"
+                    className="text-orange-600"
                   >
                     <i className="fa-brands fa-instagram"></i>
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.2 }}
                     href="#"
                     target="_blank"
-                    className="text-orange-600 hover:scale-110 transition-transform"
+                    className="text-orange-600"
                   >
                     <i className="fa-brands fa-linkedin"></i>
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-orange-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-orange-300 rounded-full blur-3xl opacity-20 animate-ping"></div>
+      {/* Decorative background elements with motion */}
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 0.3 }}
+        transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
+        className="absolute top-0 right-0 w-64 h-64 bg-orange-200 rounded-full blur-3xl"
+      ></motion.div>
+      <motion.div
+        initial={{ scale: 0.6, opacity: 0 }}
+        animate={{ scale: 1.1, opacity: 0.2 }}
+        transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
+        className="absolute bottom-0 left-0 w-72 h-72 bg-orange-300 rounded-full blur-3xl"
+      ></motion.div>
     </section>
   );
 };

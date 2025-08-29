@@ -34,9 +34,9 @@ export default function BestCompanySection() {
               href="https://www.google.com/"
               className="text-blue-600 hover:underline"
             >
-              Web Design & Development Company based in Chandigarh (Mohali)
+              Web Design & Development Company based in shri Anandpur sahib
             </a>
-            , with its registered office in Himachal Pradesh. We specialize in
+            , with its registered office shri Anandpur sahib. We specialize in
             offshore web design, custom web development, dynamic web
             applications, and SEO solutions. Our team builds professional,
             customized websites with exceptional design and ongoing maintenance
@@ -48,7 +48,7 @@ export default function BestCompanySection() {
             marketing, content creation, content management systems, logo
             design, web banners, flash animation, software development, and
             advanced SEO services. We proudly serve clients in Chandigarh,
-            Mohali, Panchkula, Himachal Pradesh, across India, and worldwide.
+            Mohali, Panchkula, Himachal Pradesh,Anandpur sahib, across India, and worldwide.
           </p>
 
           <div className="mt-6">

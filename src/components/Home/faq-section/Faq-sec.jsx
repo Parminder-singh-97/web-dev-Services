@@ -19,16 +19,16 @@ const FaqSections = () => {
 
         <Accordion type="single" collapsible className="w-full space-y-2 cursor-pointer">
           <AccordionItem value="faq1">
-            <AccordionTrigger>What services does Ps logistics offer?</AccordionTrigger>
+            <AccordionTrigger>What services does SP logistics offer?</AccordionTrigger>
             <AccordionContent>
-              Htlogics is a top web design agency in Chandigarh providing website
+              SP logistics is a top web design agency in Anandpur sahib providing across india and all over the world website
               creation, development, e-commerce solutions, online marketing, and
               custom software development.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="faq2">
-            <AccordionTrigger>Why choose Ps logistics for web design in Chandigarh?</AccordionTrigger>
+            <AccordionTrigger>Why choose SP logistics for web design in Anandpur sahib?</AccordionTrigger>
             <AccordionContent>
               We are known for visually appealing, mobile-friendly, and
               SEO-optimized websites, ensuring great user experiences.
@@ -94,13 +94,13 @@ const FaqSections = () => {
           <AccordionItem value="faq10">
             <AccordionTrigger>Which company is best for web development?</AccordionTrigger>
             <AccordionContent>
-              Htlogics is among the most trusted names, delivering fast, secure, and
+              SP logistics is among the most trusted names, delivering fast, secure, and
               tailored web solutions backed by expert support.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="faq11">
-            <AccordionTrigger>How can I get in touch with Ps logistics?</AccordionTrigger>
+            <AccordionTrigger>How can I get in touch with SP logistics?</AccordionTrigger>
             <AccordionContent>
               You can contact us via our website, email, or phone. Our team is happy
               to assist with your project needs.

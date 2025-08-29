@@ -42,7 +42,7 @@ const AboutSection = () => {
 
             <p className="text-gray-700 leading-relaxed drop-shadow-sm ">
               SP Logistics is a software product and custom solutions development
-              company, headquartered in Mohali. For over 18 years, we’ve been
+              company, headquartered in shri Anandpur sahib. For over 1 years, we’ve been
               delivering value-driven IT services to small, medium, and large-scale
               clients across India. Beyond custom development, our deep research
               into emerging technologies has enabled us to create a diverse

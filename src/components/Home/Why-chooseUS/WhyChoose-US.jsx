@@ -117,7 +117,7 @@ const WhyChooseUS = () => {
 
               {/* Total Projects */}
               <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center text-center shadow-md w-64">
-                <h4 className="text-yellow-400 text-2xl font-bold">1,548</h4>
+                <h4 className="text-yellow-400 text-2xl font-bold">5</h4>
                 <p className="text-green-400">Total Projects</p>
               </div>
             </div>
