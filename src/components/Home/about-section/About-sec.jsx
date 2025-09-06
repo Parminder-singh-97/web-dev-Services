@@ -16,10 +16,10 @@ const AboutSection = () => {
             <figure className="relative overflow-hidden rounded-lg shadow-lg group">
               <img
                 src="https://images.pexels.com/photos/3143813/pexels-photo-3143813.jpeg"
-                alt="About SP Logistics"
+                alt="About SP Dev solutions"
                 className="rounded-lg transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 border-4 border-orange-600 rounded-lg opacity-20"></div>
+              <div className="absolute inset-0 border-4 border-blue-600 rounded-lg opacity-20"></div>
             </figure>
           </div>
 
@@ -31,7 +31,7 @@ const AboutSection = () => {
           >
             <div>
               <h2 className="text-3xl md:text-4xl font-bold leading-snug">
-                <span className="text-orange-600 block drop-shadow-sm ">About SP Logistics</span>
+                <span className="text-blue-600 block drop-shadow-sm ">About SP Dev solutions</span>
                 Transforming Business with Technology
               </h2>
               <h4 className="text-lg drop-shadow-sm  text-gray-700 font-medium mt-2">
@@ -41,7 +41,7 @@ const AboutSection = () => {
             </div>
 
             <p className="text-gray-700 leading-relaxed drop-shadow-sm ">
-              SP Logistics is a software product and custom solutions development
+              SP Dev solutions is a software product and custom solutions development
               company, headquartered in shri Anandpur sahib. For over 1 years, we’ve been
               delivering value-driven IT services to small, medium, and large-scale
               clients across India. Beyond custom development, our deep research
@@ -59,7 +59,7 @@ const AboutSection = () => {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 bg-orange-600 text-white font-medium px-6 py-3 rounded-lg shadow hover:bg-orange-700 transition"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
             >
               More About Us <i className="fa-solid fa-arrow-right" />
             </Link>

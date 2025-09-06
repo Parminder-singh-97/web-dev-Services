@@ -9,7 +9,7 @@ const page = () => {
     <>
     <Team_header/>
     <OurTeamSection/>
-    <WorkCount/>
+    {/* <WorkCount/> */}
     <ContactSection/>
       
     </>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const We_offer_section = () => {
   return (
-    <section className="single-info-grid py-16 bg-gradient-to-r from-orange-100 to-red-100 text-black relative overflow-hidden">
+    <section className="single-info-grid py-16 bg-gradient-to-r from-blue-100 to-voilet-100 text-black relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl">
         <div
           className="flex flex-col md:flex-row items-center md:items-start gap-12"
@@ -27,7 +27,7 @@ const We_offer_section = () => {
             <p>
               <Link
                 href="/contact-us"
-                className="inline-flex items-center gap-2 bg-orange-300 text-orange-900 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-orange-400 transition"
+                className="inline-flex items-center gap-2 bg-blue-300 text-blue-900 font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-blue-400 transition"
               >
                 Get Started Now
                 <i className="fa-solid fa-arrow-right" />

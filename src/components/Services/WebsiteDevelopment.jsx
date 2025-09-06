@@ -30,7 +30,7 @@ export default function WebsiteDevelopment() {
       desc: "Dynamic web apps with Angular ensuring fast and responsive performance."
     },
     {
-      icon: <Rocket className="w-8 h-8 text-orange-500" />,
+      icon: <Rocket className="w-8 h-8 text-blue-500" />,
       title: "React Development",
       desc: "Modern, high-performance React applications with reusable components."
     },
@@ -105,7 +105,7 @@ export default function WebsiteDevelopment() {
                   <li key={name} className="flex items-center gap-2">
                     <span className="text-gray-400">/</span>
                     {isLast ? (
-                      <span className="capitalize text-orange-400 font-semibold">
+                      <span className="capitalize text-blue-400 font-semibold">
                         {name.replace(/-/g, " ")}
                       </span>
                     ) : (
@@ -155,7 +155,7 @@ export default function WebsiteDevelopment() {
 
       {/* Call To Action Section */}
       <motion.div
-        className="max-w-5xl mx-auto mt-20 bg-gradient-to-r from-orange-600 to-orange-600 rounded-2xl text-white p-10 shadow-lg text-center"
+        className="max-w-5xl mx-auto mt-20 bg-gradient-to-r from-blue-600 to-blue-600 rounded-2xl text-white p-10 shadow-lg text-center"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
@@ -166,7 +166,7 @@ export default function WebsiteDevelopment() {
         </p>
         <Link
           href="/contact-us"
-          className="inline-block bg-white text-orange-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+          className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
         >
           Get a Free Consultation
         </Link>

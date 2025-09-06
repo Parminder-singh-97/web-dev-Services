@@ -47,7 +47,7 @@ const AboutUs_Header = () => {
                 <li key={name} className="flex items-center gap-2">
                   <span className="text-gray-400">/</span>
                   {isLast ? (
-                    <span className="capitalize text-orange-600 font-semibold">
+                    <span className="capitalize text-blue-600 font-semibold">
                       {name.replace(/-/g, " ")}
                     </span>
                   ) : (

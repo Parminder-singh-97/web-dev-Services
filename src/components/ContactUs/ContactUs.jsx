@@ -46,7 +46,7 @@ const ContactSection = () => {
         <div className="w-full text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
             Let’s get connected <br />
-            <span className="text-orange-600">
+            <span className="text-blue-600">
               Transform your Business with us
             </span>
           </h2>
@@ -63,12 +63,12 @@ const ContactSection = () => {
           {/* Left Content */}
           <div className="md:w-1/2 space-y-8">
             <h2 className="text-4xl font-extrabold">
-              <span className="text-orange-400">Want to talk</span> about your
+              <span className="text-blue-400">Want to talk</span> about your
               Project
             </h2>
 
-            <div className="flex items-start gap-6 bg-orange-200/20 rounded-xl p-6 shadow-lg">
-              <figure className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-4 border-orange-400">
+            <div className="flex items-start gap-6 bg-blue-200/20 rounded-xl p-6 shadow-lg">
+              <figure className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-4 border-blue-400">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1726736523163-22e5b8dcfe72?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project icon"
@@ -84,7 +84,7 @@ const ContactSection = () => {
                   project not only meets but exceeds your expectations. Ready to
                   get started?
                 </p>
-                <h6 className="font-semibold text-orange-600">
+                <h6 className="font-semibold text-blue-600">
                   Let’s talk about how we can bring your project to life.
                 </h6>
               </div>
@@ -108,7 +108,7 @@ const ContactSection = () => {
                     className={`border rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 ${
                       errors.fullName
                         ? "border-red-500 focus:ring-red-500"
-                        : "border-gray-300 focus:ring-orange-400"
+                        : "border-gray-300 focus:ring-blue-400"
                     }`}
                   />
                   {errors.fullName && (
@@ -132,7 +132,7 @@ const ContactSection = () => {
                     className={`border rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 ${
                       errors.emailAddress
                         ? "border-red-500 focus:ring-red-500"
-                        : "border-gray-300 focus:ring-orange-400"
+                        : "border-gray-300 focus:ring-blue-400"
                     }`}
                   />
                   {errors.emailAddress && (
@@ -147,7 +147,7 @@ const ContactSection = () => {
                     type="text"
                     placeholder="Company Name"
                     {...register("company")}
-                    className="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                    className="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
                 </div>
 
@@ -164,7 +164,7 @@ const ContactSection = () => {
                     className={`border rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 ${
                       errors.phoneNumber
                         ? "border-red-500 focus:ring-red-500"
-                        : "border-gray-300 focus:ring-orange-400"
+                        : "border-gray-300 focus:ring-blue-400"
                     }`}
                   />
                   {errors.phoneNumber && (
@@ -179,7 +179,7 @@ const ContactSection = () => {
                 type="text"
                 placeholder="Skype ID / Whatsapp (Optional)"
                 {...register("skype")}
-                className="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
 
               <textarea
@@ -190,7 +190,7 @@ const ContactSection = () => {
                 className={`border rounded-md px-4 py-3 w-full resize-none focus:outline-none focus:ring-2 ${
                   errors.message
                     ? "border-red-500 focus:ring-red-500"
-                    : "border-gray-300 focus:ring-orange-400"
+                    : "border-gray-300 focus:ring-blue-400"
                 }`}
               />
               {errors.message && (
@@ -201,14 +201,14 @@ const ContactSection = () => {
 
               <p className="text-xs text-gray-600">
                 By submitting this form you acknowledge that you have read{" "}
-                <a href="#" className="text-orange-500 hover:underline">
+                <a href="#" className="text-blue-500 hover:underline">
                   Terms and Conditions
                 </a>
               </p>
               <button
                 type="submit"
                 disabled={disabledSubmit}
-                className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition text-white font-bold py-3 rounded-md shadow-lg"
+                className="w-full bg-gradient-to-r from-blue-500 to-red-600 hover:from-blue-600 hover:to-red-700 transition text-white font-bold py-3 rounded-md shadow-lg"
               >
                 {disabledSubmit ? (
                   "Submitting..."

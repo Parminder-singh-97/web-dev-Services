@@ -22,14 +22,14 @@ export default function BestCompanySection() {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
-            <span className="block text-orange-500 drop-shadow-sm  font-semibold mb-2">
-              Welcome to SP Logistics
+            <span className="block text-blue-500 drop-shadow-sm  font-semibold mb-2">
+              Welcome to SP Dev solutions
             </span>
             Searching for an affordable web design company in India?
           </h2>
 
           <p className="mt-4 text-gray-700 drop-shadow-sm ">
-            <span className="font-semibold">SP Logistics</span> is a leading{" "}
+            <span className="font-semibold">SP Dev solutions</span> is a leading{" "}
             <a
               href="https://www.google.com/"
               className="text-blue-600 hover:underline"
@@ -54,7 +54,7 @@ export default function BestCompanySection() {
           <div className="mt-6">
             <Link
               href="contact-us"
-              className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+              className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
             >
               Contact Us
               <i className="fa-solid fa-arrow-right ml-2" />

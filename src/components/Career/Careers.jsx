@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Careers = () => {
   return (
-    <section className="relative bg-orange-50 py-20 overflow-hidden">
+    <section className="relative bg-blue-50 py-20 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Left Section */}
@@ -16,13 +16,13 @@ const Careers = () => {
             className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Careers at <span className="text-orange-600">SP Logistics</span>
+              Careers at <span className="text-blue-600">SP Dev solutions</span>
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              At SP Logistics, we foster a collaborative culture where growth,
+              At SP Dev solutions, we foster a collaborative culture where growth,
               innovation, and creativity thrive. Our team is expanding, and we
               are looking for passionate individuals to join us in shaping the
-              future of logistics and technology solutions.
+              future of SP Dev solutions and technology solutions.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
               We’re hiring for <strong>Web Designers</strong>,{" "}
@@ -33,14 +33,14 @@ const Careers = () => {
               compensation.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              SP Logistics is an{" "}
-              <span className="text-orange-600 font-semibold">
+              SP Dev solutions is an{" "}
+              <span className="text-blue-600 font-semibold">
                 equal-opportunity employer
               </span>
               , celebrating diversity and inclusivity in the workplace.
             </p>
 
-            <div className="mt-8 p-6 bg-orange-100 border-l-4 border-orange-500 rounded-lg">
+            <div className="mt-8 p-6 bg-blue-100 border-l-4 border-blue-500 rounded-lg">
               <h4 className="text-lg font-semibold text-gray-800">
                 Interested in joining us?
               </h4>
@@ -48,7 +48,7 @@ const Careers = () => {
                 Please send your CV to{" "}
                 <a
                   href="mailto:s.pammi.22g@gmail.com"
-                  className="text-orange-600 font-semibold hover:underline"
+                  className="text-blue-600 font-semibold hover:underline"
                 >
                   s.pammi.22g@gmail.com
                 </a>
@@ -74,7 +74,7 @@ const Careers = () => {
                 <p>
                   <a
                     href="tel:+916280256184"
-                    className="text-orange-600 hover:underline"
+                    className="text-blue-600 hover:underline"
                   >
                     +91 6280256184
                   </a>
@@ -86,7 +86,7 @@ const Careers = () => {
                 <p>
                   <a
                     href="mailto:s.pammi.22g@gmail.com"
-                    className="text-orange-600 hover:underline"
+                    className="text-blue-600 hover:underline"
                   >
                     s.pammi.22g@gmail.com
                   </a>
@@ -107,7 +107,7 @@ const Careers = () => {
                     whileHover={{ scale: 1.2 }}
                     href="#"
                     target="_blank"
-                    className="text-orange-600"
+                    className="text-blue-600"
                   >
                     <i className="fa-brands fa-facebook-f"></i>
                   </motion.a>
@@ -115,7 +115,7 @@ const Careers = () => {
                     whileHover={{ scale: 1.2 }}
                     href="#"
                     target="_blank"
-                    className="text-orange-600"
+                    className="text-blue-600"
                   >
                     <i className="fa-brands fa-instagram"></i>
                   </motion.a>
@@ -123,7 +123,7 @@ const Careers = () => {
                     whileHover={{ scale: 1.2 }}
                     href="#"
                     target="_blank"
-                    className="text-orange-600"
+                    className="text-blue-600"
                   >
                     <i className="fa-brands fa-linkedin"></i>
                   </motion.a>
@@ -139,13 +139,13 @@ const Careers = () => {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.3 }}
         transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute top-0 right-0 w-64 h-64 bg-orange-200 rounded-full blur-3xl"
+        className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl"
       ></motion.div>
       <motion.div
         initial={{ scale: 0.6, opacity: 0 }}
         animate={{ scale: 1.1, opacity: 0.2 }}
         transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute bottom-0 left-0 w-72 h-72 bg-orange-300 rounded-full blur-3xl"
+        className="absolute bottom-0 left-0 w-72 h-72 bg-blue-300 rounded-full blur-3xl"
       ></motion.div>
     </section>
   );

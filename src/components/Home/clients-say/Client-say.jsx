@@ -14,22 +14,22 @@ export default function ClientTestimonials() {
       rating: 4.5,
     },
     {
-      text: "I have been utilising SP Logistics for a few projects now. They have been very professional and friendly throughout the experience. Keep up the great work.",
+      text: "I have been utilising SP Dev solutions for a few projects now. They have been very professional and friendly throughout the experience. Keep up the great work.",
       name: "Dan Daniel",
       rating: 4.5,
     },
     {
-      text: "SP Logistics is an amazing creative team of IT developers on which you can rely and have long-term win-win cooperation.",
+      text: "SP Dev solutions is an amazing creative team of IT developers on which you can rely and have long-term win-win cooperation.",
       name: "Kosanovic Irena",
       rating: 4.5,
     },
     {
-      text: "New relationship with SP Logistics but in comparison to others, these people are so much more pro-active & service oriented, besides the fact that they know their job. Best wishes to the team!",
+      text: "New relationship with SP Dev solutions but in comparison to others, these people are so much more pro-active & service oriented, besides the fact that they know their job. Best wishes to the team!",
       name: "Oliver",
       rating: 4.5,
     },
     {
-      text: "Recently used SP Logistics to update a website that was dated and needed to be brought up to speed. The team quickly answered questions and assisted with the design. Highly recommended!",
+      text: "Recently used SP Dev solutions to update a website that was dated and needed to be brought up to speed. The team quickly answered questions and assisted with the design. Highly recommended!",
       name: "Geoffrey Oropeza",
       rating: 4.5,
     },
@@ -39,7 +39,7 @@ export default function ClientTestimonials() {
     <section className=" py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">
-          <span className="text-orange-600">Success Stories</span>
+          <span className="text-blue-600">Success Stories</span>
           <br />
           What Our Clients Say About Us
         </h2>
