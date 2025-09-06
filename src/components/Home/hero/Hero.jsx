@@ -24,7 +24,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="bg-white py-20 w-full flex items-center justify-between min-h-screen">
+<section className="bg-white py-20 w-full flex items-center justify-between min-h-screen overflow-hidden">
       <div className="w-[85%] mx-auto flex flex-col md:flex-row items-center md:items-start">
         
         {/* Left side */}
