@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
+import Link from "next/link";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
@@ -38,6 +39,12 @@ const Hero = () => {
             Built by a passionate team of social entrepreneurs who believe in
             the transformative power of education and technology.
           </p>
+          <Link href="/contact-us">
+
+          <button className="bg-blue-600 cursor-pointer text-white py-3 px-6 rounded hover:bg-blue-700 transition duration-300">
+            Get Started
+          </button>
+          </Link>
         </div>
 
         {/* Right side */}
