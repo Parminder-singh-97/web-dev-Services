@@ -21,8 +21,19 @@ const Clients = () => {
             </p>
           </div>
 
+          <div>
+            {/* Comming soon section */}
+            <div className="flex justify-center items-center h-48 bg-white rounded-lg shadow-md mb-12">
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Comming Soon...
+              </h3>
+            </div>
+          </div>
+
+       
+
           {/* Client Logos */}
-          <div
+          {/* <div
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
             data-aos="zoom-in"
           >
@@ -49,14 +60,14 @@ const Clients = () => {
               </figure>
             ))}
 
-            {/* React Icon as client logo */}
+            
             <figure className="flex justify-center items-center p-4 bg-white rounded-lg shadow hover:shadow-xl transition">
               <FaReact className="text-6xl text-blue-500 grayscale hover:grayscale-0 hover:scale-105 transition-transform duration-300" />
             </figure>
-          </div>
+          </div> */}
 
           {/* Testimonials */}
-          <div className="mt-20">
+          {/* <div className="mt-20">
             <h3
               className="text-2xl font-semibold text-gray-800 text-center mb-10"
               data-aos="fade-up"
@@ -112,7 +123,7 @@ const Clients = () => {
                 </figure>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

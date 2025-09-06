@@ -12,22 +12,22 @@ export default function WebsiteDesigning() {
 
   const services = [
     {
-      icon: <Paintbrush className="w-8 h-8 text-orange-500" />,
+      icon: <Paintbrush className="w-8 h-8 text-blue-500" />,
       title: "Web Graphic Design",
       desc: "Beautiful, custom-designed web graphics tailored to your brand identity.",
     },
     {
-      icon: <Layout className="w-8 h-8 text-orange-500" />,
+      icon: <Layout className="w-8 h-8 text-blue-500" />,
       title: "Interface Logo Design",
       desc: "Modern, responsive logos and icons that scale across platforms.",
     },
     {
-      icon: <FileText className="w-8 h-8 text-orange-500" />,
+      icon: <FileText className="w-8 h-8 text-blue-500" />,
       title: "Brochures & Catalogs",
       desc: "Professional digital brochures and catalogs to showcase your services.",
     },
     {
-      icon: <Sparkles className="w-8 h-8 text-orange-500" />,
+      icon: <Sparkles className="w-8 h-8 text-blue-500" />,
       title: "User Experience Design",
       desc: "Seamless, user-friendly UI/UX experiences for web & mobile.",
     },
@@ -49,7 +49,7 @@ export default function WebsiteDesigning() {
   ];
 
   return (
-    <section className="py-16 px-6 bg-gradient-to-r from-orange-50 to-white">
+    <section className="py-16 px-6 bg-gradient-to-r from-blue-50 to-white">
       {/* Banner + Breadcrumb (KEEP AS IS) */}
       <div
         className="banner-inner py-20 text-white bg-black relative opacity-90 bg-cover bg-center"
@@ -85,7 +85,7 @@ export default function WebsiteDesigning() {
                   <li key={name} className="flex items-center gap-2">
                     <span className="text-black">/</span>
                     {isLast ? (
-                      <span className="capitalize text-orange-400 font-semibold">
+                      <span className="capitalize text-blue-400 font-semibold">
                         {name.replace(/-/g, " ")}
                       </span>
                     ) : (
@@ -172,12 +172,12 @@ export default function WebsiteDesigning() {
           {process.map((step, i) => (
             <motion.div
               key={i}
-              className="p-6 bg-orange-50 rounded-xl shadow hover:shadow-lg transition"
+              className="p-6 bg-blue-50 rounded-xl shadow hover:shadow-lg transition"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
             >
-              <h4 className="text-xl font-semibold text-orange-600">{step.step}</h4>
+              <h4 className="text-xl font-semibold text-blue-600">{step.step}</h4>
               <p className="text-gray-600 mt-3">{step.desc}</p>
             </motion.div>
           ))}
@@ -197,7 +197,7 @@ export default function WebsiteDesigning() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
               >
-                <CheckCircle className="text-orange-500 mt-1" />
+                <CheckCircle className="text-blue-500 mt-1" />
                 <p className="text-gray-700">{benefit}</p>
               </motion.div>
             ))}
@@ -206,11 +206,11 @@ export default function WebsiteDesigning() {
       </div>
 
       {/* Sticky CTA */}
-      <div className="fixed bottom-6 right-6">
+      <div className="fixed bottom-6 left-6">
         <Link href="/contact">
           <motion.button
             whileHover={{ scale: 1.1 }}
-            className="px-6 py-3 bg-orange-600 text-white rounded-full shadow-lg hover:bg-orange-700 transition"
+            className="px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
           >
             Get a Free Quote
           </motion.button>

@@ -13,37 +13,37 @@ export default function MobileAppDevelopment() {
 
   const services = [
     {
-      icon: <Smartphone className="w-10 h-10 text-orange-500" />,
+      icon: <Smartphone className="w-10 h-10 text-blue-500" />,
       title: "Custom Native App Development",
       desc: "Tailor-made mobile apps for iOS and Android with smooth performance and robust architecture.",
     },
     {
-      icon: <RefreshCcw className="w-10 h-10 text-orange-500" />,
+      icon: <RefreshCcw className="w-10 h-10 text-blue-500" />,
       title: "Progressive Web Apps (PWA)",
       desc: "Cross-platform PWAs that work seamlessly across devices, offline support & push notifications.",
     },
     {
-      icon: <Wrench className="w-10 h-10 text-orange-500" />,
+      icon: <Wrench className="w-10 h-10 text-blue-500" />,
       title: "App Maintenance",
       desc: "Continuous updates, bug fixes, performance optimization, and feature upgrades for your apps.",
     },
     {
-      icon: <Code className="w-10 h-10 text-orange-500" />,
+      icon: <Code className="w-10 h-10 text-blue-500" />,
       title: "UI/UX & Prototyping",
       desc: "Interactive designs, wireframes, and modern UI/UX tailored for user engagement and retention.",
     },
     {
-      icon: <ShoppingBag className="w-10 h-10 text-orange-500" />,
+      icon: <ShoppingBag className="w-10 h-10 text-blue-500" />,
       title: "E-commerce Apps",
       desc: "Scalable mobile stores with payment gateways, product catalogs, and analytics integration.",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 text-orange-500" />,
+      icon: <ShieldCheck className="w-10 h-10 text-blue-500" />,
       title: "Enterprise Solutions",
       desc: "Secure enterprise-grade apps with authentication, cloud sync, and advanced analytics.",
     },
     {
-      icon: <Cpu className="w-10 h-10 text-orange-500" />,
+      icon: <Cpu className="w-10 h-10 text-blue-500" />,
       title: "AI & IoT Integration",
       desc: "Smart mobile solutions powered by AI, ML, and IoT device connectivity.",
     },
@@ -56,7 +56,7 @@ export default function MobileAppDevelopment() {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-orange-50 to-white relative">
+    <section className="bg-gradient-to-r from-blue-50 to-white relative">
       {/* Banner Section (keep as is) */}
       <div
         className="banner-inner py-24 text-white bg-black relative opacity-95 bg-cover bg-center"
@@ -79,7 +79,7 @@ export default function MobileAppDevelopment() {
               <li>
                 <Link
                   href="/"
-                  className="flex items-center gap-1 text-black hover:text-orange-400 transition"
+                  className="flex items-center gap-1 text-black hover:text-blue-400 transition"
                 >
                   <FaHome />
                   Home
@@ -92,13 +92,13 @@ export default function MobileAppDevelopment() {
                   <li key={name} className="flex items-center gap-2">
                     <span className=" text-black">/</span>
                     {isLast ? (
-                      <span className="capitalize text-orange-400 font-semibold">
+                      <span className="capitalize text-blue-400 font-semibold">
                         {name.replace(/-/g, " ")}
                       </span>
                     ) : (
                       <Link
                         href={routeTo}
-                        className="capitalize  text-black hover:text-orange-400 transition"
+                        className="capitalize  text-black hover:text-blue-400 transition"
                       >
                         {name.replace(/-/g, " ")}
                       </Link>
@@ -115,12 +115,12 @@ export default function MobileAppDevelopment() {
       <div className="max-w-7xl mt-12 mx-auto px-6 flex gap-12">
         {/* Fixed Scrollable Sidebar */}
         <aside className="hidden lg:block w-64 sticky top-28 h-fit bg-white rounded-xl shadow-md p-6">
-          <h3 className="font-bold text-orange-500 text-lg mb-4">Technologies</h3>
+          <h3 className="font-bold text-blue-500 text-lg mb-4">Technologies</h3>
           <div className="space-y-4">
             {techLogos.map((logo, i) => (
               <motion.div
                 key={i}
-                className="flex items-center gap-3 p-2 rounded-lg hover:bg-orange-50 transition"
+                className="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-50 transition"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}

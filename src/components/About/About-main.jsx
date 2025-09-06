@@ -15,9 +15,9 @@ const About_main = () => {
           {/* Header */}
           <div className="w-full px-4 mb-12 text-center" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="text-4xl font-extrabold mb-2">
-              <span className="text-orange-500">About PS logistics</span> — Our Story
+              <span className="text-blue-500">About SP Dev solutions</span> — Our Story
             </h2>
-            <div className="w-24 h-1 bg-orange-300 mx-auto rounded mt-2"></div>
+            <div className="w-24 h-1 bg-blue-300 mx-auto rounded mt-2"></div>
           </div>
 
           {/* Image Content */}
@@ -29,13 +29,13 @@ const About_main = () => {
             <figure className="relative w-full max-w-md aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <img
                 src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="About SP Logistics 1"
+                alt="About SP Dev solutions 1"
                 className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
                 loading="lazy"
               />
               <img
                 src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="About SP Logistics 2"
+                alt="About SP Dev solutions 2"
                 className="absolute top-10 left-10 w-3/4 rounded-lg shadow-lg border-4 border-yellow-300 object-cover transition-transform duration-700 hover:rotate-3 hover:scale-110"
                 loading="lazy"
               />
@@ -49,8 +49,8 @@ const About_main = () => {
           >
             <div className="space-y-6 text-lg leading-relaxed font-semibold drop-shadow-lg">
               <p>
-                <a href="https://www.htlogics.com/" className="underline hover:text-orange-300 transition">
-                  SP Logistics
+                <a href="https://www.htlogics.com/" className="underline hover:text-blue-300 transition">
+                  SP Dev solutions
                 </a>{" "}
                 is a leading software product and custom solutions company based in Mohali, dedicated to innovation and excellence.
               </p>
@@ -60,8 +60,8 @@ const About_main = () => {
               </p>
               <p>
                 At{" "}
-                <a href="https://www.htlogics.com/" className="underline hover:text-orange-300 transition">
-                   SP Logistics
+                <a href="https://www.htlogics.com/" className="underline hover:text-blue-300 transition">
+                 SP Dev solutions
                 </a>
                 , we believe in building lasting relationships driven by passion, integrity, and continuous growth — not just numbers.
               </p>

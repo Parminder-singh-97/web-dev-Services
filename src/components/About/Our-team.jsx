@@ -29,7 +29,7 @@ export default function OurTeamSection() {
                 // href="https://www.htlogics.com/"
                 className="text-blue-600 hover:underline"
               >
-                SP Logistics
+                SP Dev solutions
               </a>
               , our work culture revolves around fulfilling client needs while
               delivering exceptional value for investment. We provide complete

@@ -156,8 +156,8 @@ html {
 
 /* For Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: #f97316 #fff;
+  scrollbar-width: 50px;
+  scrollbar-color: #1687f9 #fff;
 }
 
 
@@ -165,9 +165,9 @@ html {
 /* From Uiverse.io by mobinkakei */ 
 #wifi-loader {
   --background: #ffab62;
-  --front-color: #f05129;
+  --front-color: #2975f0;
   --back-color: #c3c8de;
-  --text-color: #f1965e;
+  --text-color: #5e7bf1;
   width: 64px;
   height: 64px;
   border-radius: 50px;

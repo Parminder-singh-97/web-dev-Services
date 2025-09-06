@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
     import { FaLongArrowAltUp } from "react-icons/fa";
 
-export default function BackToTop() {
+export default function   BackToTop() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function BackToTop() {
     <div className="fixed bottom-5 right-5 z-50">
       <button
         onClick={scrollToTop}
-        className="bg-orange-600 hover:bg-orange-700 text-white p-3 rounded-full shadow-lg transition"
+        className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition"
       >
         <FaLongArrowAltUp className="w-5 h-5" />
       </button>

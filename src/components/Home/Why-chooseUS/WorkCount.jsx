@@ -39,7 +39,7 @@ export default function WorkCount() {
               key={index}
               className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition"
             >
-              <h3 className="text-4xl font-bold text-orange-400">
+              <h3 className="text-4xl font-bold text-blue-400">
                 <CountUp end={item.value} duration={2.5} />+
               </h3>
               <p className="mt-2 text-lg font-medium">{item.label}</p>

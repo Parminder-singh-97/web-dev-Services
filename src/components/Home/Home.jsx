@@ -16,7 +16,7 @@ const Home = () => {
       <AboutSection/>
       <WhyChooseUS/> 
       <ClientTestimonials/>
-      <WorkCount/> 
+      {/* <WorkCount/>  */}
       <FaqSections/>
     </>
   );

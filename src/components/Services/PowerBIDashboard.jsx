@@ -12,7 +12,7 @@ const PowerBIDashboard = () => {
       const pathnames = pathname.split("/").filter((x) => x);
     
   return (
-    <section className="bg-orange-50 py-16 px-6 lg:px-20">
+    <section className="bg-blue-50 py-16 px-6 lg:px-20">
         {/* Banner Section */}
       <div
         className="banner-inner py-20 text-white bg-black relative opacity-90 bg-cover bg-center"
@@ -50,7 +50,7 @@ const PowerBIDashboard = () => {
                   <li key={name} className="flex items-center gap-2">
                     <span className="text-black">/</span>
                     {isLast ? (
-                      <span className="capitalize text-orange-400 font-semibold">
+                      <span className="capitalize text-blue-400 font-semibold">
                         {name.replace(/-/g, " ")}
                       </span>
                     ) : (
@@ -74,7 +74,7 @@ const PowerBIDashboard = () => {
         viewport={{ once: true }}
         className="text-center my-16"
       >
-        <h2 className="text-4xl font-extrabold text-orange-600 mb-4">
+        <h2 className="text-4xl font-extrabold text-blue-600 mb-4">
           Power BI Dashboard Solutions
         </h2>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -115,17 +115,17 @@ const PowerBIDashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
         {[
           {
-            icon: <BarChart3 className="w-10 h-10 text-orange-600" />,
+            icon: <BarChart3 className="w-10 h-10 text-blue-600" />,
             title: "Interactive Visuals",
             desc: "Engage with dynamic dashboards that allow filtering, drilling down, and real-time exploration of your data.",
           },
           {
-            icon: <PieChart className="w-10 h-10 text-orange-600" />,
+            icon: <PieChart className="w-10 h-10 text-blue-600" />,
             title: "Custom KPIs",
             desc: "Track your business goals with customized KPIs and performance metrics tailored to your needs.",
           },
           {
-            icon: <LineChart className="w-10 h-10 text-orange-600" />,
+            icon: <LineChart className="w-10 h-10 text-blue-600" />,
             title: "Data Integration",
             desc: "Seamlessly connect Power BI with multiple data sources like Excel, SQL, and cloud apps.",
           },
@@ -153,9 +153,9 @@ const PowerBIDashboard = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-orange-100 rounded-2xl p-10 shadow-lg"
+        className="bg-blue-100 rounded-2xl p-10 shadow-lg"
       >
-        <h3 className="text-2xl font-bold text-orange-700 mb-6 text-center">
+        <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">
           Why Choose Our Power BI Services?
         </h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
@@ -173,7 +173,7 @@ const PowerBIDashboard = () => {
               viewport={{ once: true }}
               className="flex items-center gap-2"
             >
-              <CheckCircle className="text-orange-600 w-6 h-6" />
+              <CheckCircle className="text-blue-600 w-6 h-6" />
               {point}
             </motion.li>
           ))}
@@ -196,7 +196,7 @@ const PowerBIDashboard = () => {
           better decisions and grow your business.
         </p>
         <Link href="/contact-us">
-        <button className=" cursor-pointer px-6 py-3 bg-orange-600 text-white rounded-full font-semibold shadow-md hover:bg-orange-700 transition">
+        <button className=" cursor-pointer px-6 py-3 bg-blue-600 text-white rounded-full font-semibold shadow-md hover:bg-blue-700 transition">
           Get a Free Consultation
         </button>
         </Link>

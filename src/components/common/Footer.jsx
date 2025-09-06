@@ -12,42 +12,42 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1 - Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+            <h4 className="text-lg font-semibold mb-4 text-blue-500">
               Our Services
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   Web Designing
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   Web Development
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   Power BI Dashboard Solutions
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   E-Commerce Development
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   CMS Development
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   Custom Software Solutions
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   Web Hosting & Maintenance
                 </a>
               </li>
@@ -56,7 +56,7 @@ const Footer = () => {
 
           {/* Column 2 - Technology Expertise */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+            <h4 className="text-lg font-semibold mb-4 text-blue-500">
               Technology Expertise
             </h4>
             <ul className="space-y-2">
@@ -71,32 +71,32 @@ const Footer = () => {
 
           {/* Column 3 - Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">
+            <h4 className="text-lg font-semibold mb-4 text-blue-500">
               Quick Links
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="/about-us" className="hover:text-orange-400">
+                <a href="/about-us" className="hover:text-blue-400">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-orange-400">
+                <a href="/services" className="hover:text-blue-400">
                   Services
                 </a>
               </li>
               <li>
-                <a href="/career" className="hover:text-orange-400">
+                <a href="/career" className="hover:text-blue-400">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-orange-400">
+                <a href="/contact" className="hover:text-blue-400">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="/PrivacyTerms" className="hover:text-orange-400">
+                <a href="/PrivacyTerms" className="hover:text-blue-400">
                   Privacy Policy
                 </a>
               </li>
@@ -106,14 +106,14 @@ const Footer = () => {
 
           {/* Column 4 - About */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-500">
-              About SP-Logistics
+            <h4 className="text-lg font-semibold mb-4 text-blue-500">
+              About SP Dev solutions
             </h4>
             <p className="text-sm text-gray-300 leading-6">
-              At SP-Logistics, we specialize in providing cutting-edge
-              <span className="text-orange-400"> web solutions</span>, 
-              <span className="text-orange-400"> digital transformation</span>, 
-              and <span className="text-orange-400"> business intelligence</span>.  
+              At SP Dev solutions, we specialize in providing cutting-edge
+              <span className="text-blue-400"> web solutions</span>, 
+              <span className="text-blue-400"> digital transformation</span>, 
+              and <span className="text-blue-400"> business intelligence</span>.  
               From website design & development to advanced Power BI dashboards,  
               we help businesses grow with technology.
             </p>
@@ -128,7 +128,7 @@ const Footer = () => {
               <h2 className="text-sm">
                 <a
                   href="mailto:info@splogistics.com"
-                  className="hover:text-orange-400"
+                  className="hover:text-blue-400"
                 >
                   info@splogistics.com
                 </a>
@@ -137,11 +137,11 @@ const Footer = () => {
             <div>
               <i className="fa-solid fa-phone-volume text-xl mb-2"></i>
               <h2 className="text-sm">
-                <a href="tel:+917018160097" className="hover:text-orange-400">
+                <a href="tel:+917018160097" className="hover:text-blue-400">
                   +91 7018160097
                 </a>
                 <br />
-                <a href="tel:+919646594291" className="hover:text-orange-400">
+                <a href="tel:+919646594291" className="hover:text-blue-400">
                   +91 9646594291
                 </a>
               </h2>
@@ -165,7 +165,7 @@ const Footer = () => {
         <div className="bg-gray-950 py-4">
           <p className="text-center text-gray-400 text-sm">
             Copyrights © {new Date().getFullYear()} All Rights Reserved |
-            SP Logistics Pvt. Ltd.
+            SP Dev solutions Pvt. Ltd.
           </p>
         </div>
       </footer>

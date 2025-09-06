@@ -115,7 +115,7 @@ export default function ServicesShowcase() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-            Our <span className="text-orange-600">Services</span>
+            Our <span className="text-blue-600">Services</span>
             </motion.h1>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function ServicesShowcase() {
                   <li key={name} className="flex items-center gap-2">
                     <span className="text-black">/</span>
                     {isLast ? (
-                      <span className="capitalize text-orange-400 font-semibold">
+                      <span className="capitalize text-blue-400 font-semibold">
                         {name.replace(/-/g, " ")}
                       </span>
                     ) : (
@@ -160,7 +160,7 @@ export default function ServicesShowcase() {
           transition={{ delay: 0.2 }}
         >
           We deliver a wide range of IT solutions tailored for your business growth —
-          from <span className="text-orange-600">website design & development to mobile apps, e-commerce, BI dashboards,</span> and more.
+          from <span className="text-blue-600">website design & development to mobile apps, e-commerce, BI dashboards,</span> and more.
         </motion.p>
 
         {/* Services Grid */}
@@ -168,7 +168,7 @@ export default function ServicesShowcase() {
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-shadow flex flex-col cursor-pointer border border-transparent hover:border-orange-400"
+              className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-shadow flex flex-col cursor-pointer border border-transparent hover:border-blue-400"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -181,20 +181,20 @@ export default function ServicesShowcase() {
               >
                 {service.icon}
               </motion.div>
-              <h3 className="text-2xl font-semibold mb-3 text-gray-800 group-hover:text-orange-600 transition">
+              <h3 className="text-2xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition">
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
               <ul className="text-left text-sm space-y-2 text-gray-700 flex-1">
                 {service.points.map((point) => (
                   <li key={point} className="flex items-center gap-2">
-                    <span className="text-orange-600">✔</span> {point}
+                    <span className="text-blue-600">✔</span> {point}
                   </li>
                 ))}
               </ul>
               <Link
                 href={service.link}
-                className="mt-6 inline-block bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition"
+                className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
               >
                 Learn More →
               </Link>
@@ -204,19 +204,19 @@ export default function ServicesShowcase() {
 
         {/* Call to Action */}
         <motion.div
-          className="mt-20 bg-orange-600 text-white py-12 px-6 rounded-3xl shadow-lg"
+          className="mt-20 bg-blue-600 text-white py-12 px-6 rounded-3xl shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
-          <p className="text-lg text-orange-100 max-w-2xl mx-auto mb-6">
+          <p className="text-lg text-blue-100 max-w-2xl mx-auto mb-6">
             Let’s bring your ideas to life with our expert team. From concept to launch, we’ll guide you every step of the way.
           </p>
           <Link
             href="/contact-us"
-            className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition"
+            className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition"
           >
             Get in Touch →
           </Link>

@@ -11,7 +11,7 @@ const PrivacyTerms = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl md:text-4xl font-bold text-orange-600"
+          className="text-3xl md:text-4xl font-bold text-blue-600"
         >
           Privacy Policy & Terms & Conditions
         </motion.h2>
@@ -32,10 +32,10 @@ const PrivacyTerms = () => {
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="bg-white shadow-lg rounded-2xl p-8 border-t-4 border-orange-500 hover:shadow-xl hover:scale-[1.02] transition"
+          className="bg-white shadow-lg rounded-2xl p-8 border-t-4 border-blue-500 hover:shadow-xl hover:scale-[1.02] transition"
         >
           <div className="flex items-center gap-3 mb-4">
-            <ShieldCheck className="text-orange-500" size={32} />
+            <ShieldCheck className="text-blue-500" size={32} />
             <h3 className="text-xl font-semibold text-gray-800">
               Privacy Policy
             </h3>
@@ -63,10 +63,10 @@ const PrivacyTerms = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="bg-white shadow-lg rounded-2xl p-8 border-t-4 border-orange-500 hover:shadow-xl hover:scale-[1.02] transition"
+          className="bg-white shadow-lg rounded-2xl p-8 border-t-4 border-blue-500 hover:shadow-xl hover:scale-[1.02] transition"
         >
           <div className="flex items-center gap-3 mb-4">
-            <FileText className="text-orange-500" size={32} />
+            <FileText className="text-blue-500" size={32} />
             <h3 className="text-xl font-semibold text-gray-800">
               Terms & Conditions
             </h3>
@@ -103,7 +103,7 @@ const PrivacyTerms = () => {
           Have questions?{" "}
           <a
             href="/contact-us"
-            className="text-orange-600 font-medium hover:underline"
+            className="text-blue-600 font-medium hover:underline"
           >
             Contact us
           </a>{" "}

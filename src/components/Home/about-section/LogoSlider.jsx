@@ -7,6 +7,7 @@ import "swiper/css";
 
 // Import icons from react-icons
 import { FaReact, FaNodeJs, FaPython, FaDocker, FaGithub, FaHtml5, FaCss3, FaAngular, FaVuejs, FaSass, FaWordpress } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export default function LogoSlider() {
   // List of icons
@@ -15,13 +16,16 @@ export default function LogoSlider() {
     { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
     { icon: <FaHtml5 className="text-orange-600" />, name: "HTML5" },
     { icon: <FaCss3 className="text-blue-600" />, name: "CSS3" },
-    { icon: <FaPython className="text-blue-500" />, name: "Python" },
+    // { icon: <FaPython className="text-blue-500" />, name: "Python" },
     { icon: <FaDocker className="text-blue-400" />, name: "Docker" },
     { icon: <FaGithub className="text-black" />, name: "GitHub" },
-    { icon: <FaAngular className="text-red-600" />, name: "Angular" },
-    { icon: <FaVuejs className="text-green-500" />, name: "Vue.js" },
-    { icon: <FaSass className="text-pink-500" />, name: "Sass" },
-    { icon: <FaWordpress className="text-sky-600" />, name: "WordPress" },
+    { icon: <RiNextjsFill  className="text-black" />, name: "Nextjs" },
+    { icon: <RiTailwindCssFill  className="text-blue-500" />, name: "Tailwind CSS" },
+    
+    // { icon: <FaAngular className="text-red-600" />, name: "Angular" },
+    // { icon: <FaVuejs className="text-green-500" />, name: "Vue.js" },
+    // { icon: <FaSass className="text-pink-500" />, name: "Sass" },
+    // { icon: <FaWordpress className="text-sky-600" />, name: "WordPress" },
     // { icon: <FaFirebase className="text-yellow-500" />, name: "Firebase" },
   ];
 

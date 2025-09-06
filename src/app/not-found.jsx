@@ -5,12 +5,12 @@ import { Home } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-orange-50 px-4 text-center">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50 px-4 text-center">
       <motion.h1
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="text-9xl font-extrabold text-orange-600"
+        className="text-9xl font-extrabold text-blue-600"
       >
         404
       </motion.h1>
@@ -40,7 +40,7 @@ export default function NotFound() {
       >
         <Link
           href="/"
-          className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-orange-600 px-6 py-3 text-white shadow-lg hover:bg-orange-700 transition"
+          className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-white shadow-lg hover:bg-blue-700 transition"
         >
           <Home className="w-5 h-5" />
           Go Back Home
