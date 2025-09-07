@@ -4,9 +4,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Navbar from "@/components/Common/Nav";
-import Footer from "@/components/Common/Footer";
-import GlobalLoader from "@/components/Common/GlobalWrapLoader";
+import Navbar from "../components/Common/Navbar";
+import Footer from "../components/Common/Footer";
+import GlobalLoader from "../components/Common/GlobalLoader";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
