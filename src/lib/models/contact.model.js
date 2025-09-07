@@ -29,8 +29,14 @@ const ContactSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    status: {
+      type: Number,
+      default: 1,
+      
+    }
   },
-  { timestamps: true }
+  { timestamps: true },
+  
 );
 
 

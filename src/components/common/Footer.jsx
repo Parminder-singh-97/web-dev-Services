@@ -1,5 +1,6 @@
 import React from "react";
 import BackToTop from "./BackToTop";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -17,39 +18,39 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   Web Designing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   Web Development
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   Power BI Dashboard Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   E-Commerce Development
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   CMS Development
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   Custom Software Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   Web Hosting & Maintenance
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,29 +77,34 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="/about-us" className="hover:text-blue-400">
+                <Link href="/about-us" className="hover:text-blue-400">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-blue-400">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/career" className="hover:text-blue-400">
+                <Link href="/career" className="hover:text-blue-400">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-blue-400">
+                <Link href="/contact" className="hover:text-blue-400">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/PrivacyTerms" className="hover:text-blue-400">
+                <Link href="/admin" className="hover:text-blue-400">
+                  Admin
+                </Link>
+              </li>
+              <li>
+                <Link href="/PrivacyTerms" className="hover:text-blue-400">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
              
             </ul>
@@ -126,24 +132,24 @@ const Footer = () => {
             <div>
               <i className="fa-regular fa-envelope text-xl mb-2"></i>
               <h2 className="text-sm">
-                <a
+                <Link
                   href="mailto:info@splogistics.com"
                   className="hover:text-blue-400"
                 >
                   info@splogistics.com
-                </a>
+                </Link>
               </h2>
             </div>
             <div>
               <i className="fa-solid fa-phone-volume text-xl mb-2"></i>
               <h2 className="text-sm">
-                <a href="tel:+917018160097" className="hover:text-blue-400">
+                <Link href="tel:+917018160097" className="hover:text-blue-400">
                   +91 7018160097
-                </a>
+                </Link>
                 <br />
-                <a href="tel:+919646594291" className="hover:text-blue-400">
+                <Link href="tel:+919646594291" className="hover:text-blue-400">
                   +91 9646594291
-                </a>
+                </Link>
               </h2>
             </div>
             <div>
