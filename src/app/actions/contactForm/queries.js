@@ -117,3 +117,54 @@ export const ContactForm = async (formData) => {
     return { error: "Internal Server Error." };
   }
 };
+
+
+
+
+
+export async function fetchContacts() {
+  try {
+    await connectToDB();
+
+    const data = await Contact.find({status:1}).sort({ createdAt: -1 }).lean();
+
+    const contacts = data.map(serializeDoc);
+
+    return {
+      success: true,
+      message: "Contacts successfully fetched ✅",
+      contacts, 
+    };
+  } catch (error) {
+    console.error("Error fetching contacts:", error);
+    return {
+      success: false,
+      message: "Failed to fetch contacts ❌",
+      contacts: [],
+    };
+  }
+}
+
+export async function DeleteContacts(contactId) {
+  try {
+    await connectToDB();
+
+    const data = await Contact.findByIdAndUpdate({_id:contactId},{status:2},{new:true}).lean();
+
+    const DeleteContacts = serializeDoc(data);
+
+    return {
+      success: true,
+      message: "Contacts Deleted successfully ✅",
+      DeleteContacts, 
+    };
+  } catch (error) {
+    console.error("Error fetching contacts:", error);
+    return {
+      success: false,
+      message: "Failed to delete contacts ❌",
+      DeleteContacts: [],
+    };
+  }
+}
+
