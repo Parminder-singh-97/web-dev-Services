@@ -30,5 +30,7 @@ export async function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/signup"], // ✅ protect admin + signup
+  matcher: ["/admin/:path*", "/signup"],
+
+  runtime: "nodejs",
 };
